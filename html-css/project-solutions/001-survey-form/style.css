@@ -21,7 +21,8 @@ body{
     /* height: 1036px; */
     background-color: rgba(0, 0, 0, 0.3);
     margin: auto;
-    margin-top: 30px;
+    margin-top: 3%;
+    padding-bottom: 20px;
 }
 
 #title{
