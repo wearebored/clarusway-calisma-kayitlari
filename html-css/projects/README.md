@@ -6,3 +6,5 @@ List of projects within HTML & CSS Plus as follows;
 
 - [002 - Google Landing Page](./002-google-landing-page/README.md)
 
+- [003 - Parallax Website](./003-parallax-website/README.md)
+
