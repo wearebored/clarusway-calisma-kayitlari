@@ -84,7 +84,7 @@ const hesapla = function (s1, s2, islem) {
     default:
       break;
   }
-  console.log("SONUC:", sonuc);
+  // console.log("SONUC:", sonuc);
   return sonuc;
 };
 
