@@ -8,3 +8,5 @@ List of projects within HTML & CSS Plus as follows;
 
 - [003 - Parallax Website](./003-parallax-website/README.md)
 
+- [004 - Team Members Page](./004-team-members-page/readme.md)
+
