@@ -10,3 +10,7 @@ List of projects within HTML & CSS Plus as follows;
 
 - [004 - Team Members Page](./004-team-members-page/readme.md)
 
+- [005 - Checkout Form](./005-checkout-form/README.md)
+
+- [006-Bootstrap-Web-Page](./006-bootstrap-web-page/README.md)
+
