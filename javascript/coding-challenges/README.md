@@ -14,4 +14,6 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [JS - CC06 - Draw a Diamond](./CC-06/README.md)
 
+- [JS - CC07 - Bracket Validator](./CC-07/README.md)
+
 
