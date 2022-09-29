@@ -16,4 +16,6 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [JS - CC07 - Bracket Validator](./CC-07/README.md)
 
+- [JS - CC08 - Sliding Window ](./CC-08/README.md)
+
 

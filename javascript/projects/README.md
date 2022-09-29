@@ -10,5 +10,7 @@ Javascript Workshop contains hands-on trainings and projects.
 
 - [Weather App](./004-Weather-App/README.md)
 
+- [Digital Clock](./005-Digital-Clock/README.md)
+
 
 

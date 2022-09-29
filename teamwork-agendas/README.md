@@ -16,4 +16,6 @@ List of teamwork agendas for Full Stack  learning path as follows;
 
 - [TW-007](./tw-007-student.pdf)
 
+- [TW-008](./tw-008-student.pdf)
+
 
