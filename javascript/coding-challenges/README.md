@@ -18,4 +18,6 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [JS - CC08 - Sliding Window ](./CC-08/README.md)
 
+- [JS - CC09 - Palindromic and Perfect Numbers Lists ](./CC-09/README.md)
+
 
