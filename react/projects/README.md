@@ -10,6 +10,8 @@ List of projects within React projects as follows;
 
 - [Random User App - 2](./004-Random-User-App/README.md)
 
+- [Recipe App - RP-05](./005-Recipe-App/README.md)
+
 
 
   

@@ -3,15 +3,14 @@ import { useState, useEffect } from "react";
 const User = () => {
   const [user, setUser] = useState("");
 
-  const getUser = () => {
+  const getUsers = () => {
     fetch("https://randomuser.me/api")
       .then((res) => res.json())
       .then((data) => setUser(data.results[0]));
   };
 
   useEffect(() => {
-    //?componentDidMount
-    getUser();
+    getUsers();
   }, []);
 
   console.log(user);

@@ -6,5 +6,7 @@ List of coding challenges within React workshops as follows;
 
 - [Random User App -02](./002-Random-User-App/README.md)
 
+- [Web Site With Router -03](./003-Clarusway-Website-Page-with-Router/Readme.md)
+
 
 
