@@ -8,6 +8,9 @@ const StyledHeader = styled.header`
 export const Logo = styled.img`
   width: 300px;
   padding: 2rem;
+  @media (max-width: ${({ theme }) => theme.responsive}) {
+    text-align: center;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -20,6 +23,7 @@ export const Nav = styled.nav`
 `;
 
 export const Image = styled(Logo)`
+  width: 350px;
   @media (max-width: ${({ theme }) => theme.responsive}) {
     margin: 2rem 0;
   }
