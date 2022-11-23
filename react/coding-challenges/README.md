@@ -8,5 +8,7 @@ List of coding challenges within React workshops as follows;
 
 - [Web Site With Router -03](./003-Clarusway-Website-Page-with-Router/Readme.md)
 
+- [Simple Counter -04](./004-Simple-counter/Readme.md)
+
 
 

@@ -12,6 +12,10 @@ List of projects within React projects as follows;
 
 - [Recipe App - RP-05](./005-Recipe-App/README.md)
 
+- [Movie App - RP-06](./006-Movie-App/README.md)
+
+- [Fire Contact App - RP-07](./007-Fire-Contact-App/README.md)
+
 
 
   
