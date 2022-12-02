@@ -1,5 +1,5 @@
 {
-  "name": "formik-yup-mui-redux",
+  "name": "stock-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@mui/lab": "^5.0.0-alpha.106",
     "@mui/material": "^5.10.12",
     "@reduxjs/toolkit": "^1.9.0",
+    "@tremor/react": "^1.1.5",
     "axios": "^1.1.3",
     "formik": "^2.2.9",
     "react": "^18.2.0",
