@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block container %}
+   <h1>ToDo List DELETE with class</h1>
+   
+   <form action="" method="POST">
+    {% csrf_token %}
+
+    <input type="submit" value="Delete Todo"/>
+
+   </form>
+
+{% endblock container %}
+    

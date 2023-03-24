@@ -1,0 +1,41 @@
+{% extends 'pizzas/base.html' %}
+
+
+{% block content %}
+
+
+<div class="d-flex justify-content-around flex-wrap mt-5">
+   
+    {% for pizza in pizzas %}
+    <div class="card m-5 shadow" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{pizza.image.url}}" class="img-fluid rounded-start"  style="height: 100%;"  alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{pizza.name}}</h5>
+              <p class="card-text">
+                <ul>
+                    <li>
+                        {{pizza.toppings.all |join:", "}}
+                    </li>
+                    <li>
+                      <strong> {{pizza.price}} $</strong> 
+                    </li>
+            </ul>
+             </p>
+             
+             {% if user.is_authenticated %}
+             <p class="card-text"><a href="{% url 'order' pizza.id %}"><button class=" btn btn-warning ms-1">Order</button></a></p>
+             {% endif %}
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+</div>
+{% endblock content %}
+    

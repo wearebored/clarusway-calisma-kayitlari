@@ -1,0 +1,28 @@
+{% extends 'pizzas/base.html' %}
+
+
+{% block content %}
+<div class="d-flex flex-column justify-content-center mx-auto mt-5 col-md-6">
+    <div class="alert alert-warning text-center p-1"> <h1>{{user.username | upper}}'s Orders</h1></div>
+    {% for order in orders  %}
+    <div class="card m-2 shadow p-2" >
+        <div class="row g-0 d-flex justify-content-between">
+            <div class="col-md-1 d-flex align-items-center">
+                <img src="{{order.pizza.image.url}}"  style=" border-radius: 50%; width: 60px; height: 60px"  alt="...">
+            </div> 
+            <div class="col-md-5 d-flex justify-content-start flex-fill">
+                <div class="card-body">
+                    <p class="card-title"><strong>Pizza:</strong> {{order.pizza}} 🍕  <strong>Size:</strong> {{order.size}} 🍕 <strong>X :</strong> {{order.quantity}} </p>              
+                </div>
+            </div>
+            <div class="col-md-2 d-flex align-items-center rounded">
+            <a href="{% url 'update_orders' order.id %}"> <button class=" btn btn-warning me-2">Update</button></a>
+             <a href="{% url 'delete_orders' order.id %}"><button class=" btn btn-danger me-2">Delete</button></a>
+          </div> 
+        </div>
+      </div>
+      {% endfor %}
+</div>
+
+
+{% endblock content %}

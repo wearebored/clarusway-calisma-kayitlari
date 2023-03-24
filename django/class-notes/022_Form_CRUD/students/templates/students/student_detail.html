@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+student
+{% endblock title %}
+
+{% block body %}
+<h2>Student Info</h2>
+    
+    {% if student.image %}
+    <img src="{{ student.image.url }}" alt=""> <hr>
+    {% endif %}
+        
+    
+    {{ student.first_name }} <br>
+    {{ student.last_name }} <br>
+    {{ student.number }}
+{% endblock body %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h1>ToDo List class based</h1>
+    <a href="/add" class="btn btn-primary">Add Todo</a>
+    <table class="table table-bordered table-striped" >
+        <thead>
+            <tr>
+                <td>title</td>
+                <td>description</td>
+                <td>priority</td>
+                <td>status</td>
+            </tr>
+        </thead>
+        <tbody>            
+            {% for todo in object_list %}                 
+                
+            <tr>
+                <td>{{todo.title}}</td>
+                <td>{{todo.description}}</td>
+                <td>
+                    
+                    {% if todo.priority == 1 %}
+                    <b class="text-danger">{{todo.get_priority_display}}</b> 
+                    {% elif  todo.priority == 2 %}
+                    <b class="text-warning">{{todo.get_priority_display}}</b>  
+                    {% else %}
+                    <b class="text-info">{{todo.get_priority_display}}</b> 
+                    {% endif %}                        
+                     
+                </td>
+                <td>
+                {% if todo.status == "c" %}
+                <b class="text-danger">{{todo.get_status_display}}</b> 
+                {% elif  todo.status == "w" %}
+                <b class="text-warning">{{todo.get_status_display}}</b>  
+                {% else %}
+                <b class="text-info">{{todo.get_status_display}}</b> 
+                {% endif %}  
+                </td>
+                <td>
+                    <a href="/update/{{ todo.id }}">Update</a>
+                    <a href="/delete/{{ todo.id }}" onclick="return confirm('are you sure?')" >Delete</a>
+                </td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock container %}
+    

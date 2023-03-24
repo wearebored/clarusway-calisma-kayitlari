@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block container %}
+
+<hr>
+<h2>TodoDetailView</h2>
+<p><a href="/" class="btn btn-primary">LIST</a></p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>priority</th>
+            <th>title</th>
+            <th>created_date</th>
+            <th>status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {% if todo.priority == 1 %}
+                <b class="text-danger">{{ todo.get_priority_display }}</b>
+                {% elif todo.priority == 2 %}
+                <b class="text-warning">{{ todo.get_priority_display }}</b>
+                {% else %}
+                <b class="text-info">{{ todo.get_priority_display }}</b>
+                {% endif %}
+            </td>
+            <td>{{ todo.title }}</td>
+            <td>{{ todo.created_date }}</td>
+            <td>
+                {% if todo.status == "P" %}
+                <b class="text-danger">{{ todo.get_status_display }}</b>
+                {% else %}
+                <b class="text-success">{{ todo.get_status_display }}</b>
+                {% endif %}
+            </td>
+            <td>
+                | <a href="/update/{{ todo.id }}">Update</a>
+                | <a href="/delete/{{ todo.id }}" onclick="return confirm('Are you sure?')">Sil</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<b>Description:</b> <br> {{ todo.description }}
+<hr>
+<b>Add:</b> <br> {{ todo.created_date }}
+<b>Update:</b> <br> {{ todo.updated_date }}
+
+{% endblock container %}
